@@ -24,9 +24,9 @@ def decode_sentence(sent)
   decoded_sent = ''
   sent = sent.split('   ')
   sent.each do |word|
-    decoded_sent += " #{decode_word(word)}"
+    decoded_sent += "#{decode_word(word)} "
   end
-  puts decoded_sent
+  print decoded_sent.strip
 end
 
 decode_sentence(".-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...")
